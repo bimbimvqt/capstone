@@ -122,7 +122,7 @@ nav ul li {
   position: relative;
 }
 
-/* a.nav-link:before,
+a.nav-link:before,
 a.dropdown-item:before {
   position: absolute;
   content: "";
@@ -130,7 +130,7 @@ a.dropdown-item:before {
   width: 0px;
   height: 1px;
   bottom: 13px;
-} */
+}
 
 nav ul li a,
 nav ul li a:after,
@@ -146,6 +146,40 @@ nav ul li a:before {
   display: block;
   transition: all 0.5s;
 }
+
+.dropdown-menu a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: green;
+  display: block;
+  transition: all 0.5s;
+}
+
+.dropdown-menu a:hover::after {
+  width: 50%;
+}
+
+.dropdown-menu a:hover {
+  color: green;
+}
+
+/* .dropdown-menu .dropdown-item a:hover {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: green;
+  display: block;
+  transition: all 0.5s;
+} */
+
+/* .dropdown-menu .dropdown-item a:hover::after {
+  width: 100%;
+} */
+
+/* .dropdown-menu .dropdown-item a {
+  text-decoration: green;
+} */
 
 .navbar-nav li:hover::after {
   width: 100%;
@@ -218,7 +252,7 @@ nav ul li a:before {
   list-style: none;
 }
 
-a.dropdown-item {
+a .dropdown-item {
   font-weight: 400;
   font-size: 1.2em;
   position: relative;
@@ -227,6 +261,15 @@ a.dropdown-item {
   display: block;
   width: 100px;
   padding-bottom: 14px;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
 }
 
 .theme-switch-wrapper {
