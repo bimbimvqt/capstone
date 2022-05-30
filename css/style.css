@@ -453,3 +453,60 @@ a.read {
 a.read:hover {
   color: #189a46;
 }
+
+/* Services  */
+.w3l-features {
+  background-color: #f9f8fd;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.w3l-features .area-box {
+  padding: 40px 30px;
+  transition: all 0.5s ease 0s;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.w3l-features .icon span.fa {
+  color: #189a46;
+  font-size: 30px;
+}
+
+.area-box h4 {
+  margin: 0;
+  padding: 0;
+  color: #000c04;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+}
+
+.w3l-features .area-box h4 a {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  display: block;
+  color: var(--heading-color);
+}
+
+.w3l-features .area-box h4 a:hover {
+  text-decoration: none;
+  color: #189a46;
+}
+
+.area-box p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  line-height: 28px;
+  color: #696969;
+  font-family: "Jost", sans-serif;
+}
