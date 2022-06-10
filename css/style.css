@@ -742,7 +742,7 @@ a.read:hover {
 }
 
 
-/* Services  */
+/* Features  */
 
 .w3l-features {
     background-color: #f9f8fd;
@@ -798,6 +798,56 @@ a.read:hover {
     line-height: 28px;
     color: #696969;
     font-family: "Jost", sans-serif;
+}
+
+
+/* Services */
+
+.rounded {
+    border-radius: 0.75rem!important;
+}
+
+.services .services_text {
+    align-self: center;
+}
+
+.services .services_text h6 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: red;
+}
+
+.services .services_text h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.services .services_text p {
+    line-height: 24px;
+    font-size: 16px;
+    color: #696969;
+    margin: 15px 0 35px;
+}
+
+.services .services_text ul {
+    list-style: none;
+}
+
+.services .services_text li {
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.fa-check {
+    color: #189a46;
+    padding: 8px;
+    font-size: 10px;
+    margin-right: 12px;
 }
 
 
