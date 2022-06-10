@@ -274,6 +274,7 @@ nav ul li {
 .futures {
     height: 110vh;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .futures_content .row {
@@ -330,31 +331,6 @@ nav ul li {
     color: green;
     transition: all 0.5s;
 }
-
-@media (min-width: 768px) .container {
-    max-width: 720px;
-}
-
-@media (min-width: 576px) .container,
-.container-sm {
-    max-width: 540px;
-}
-
-@media (min-width: 768px) .container {
-    max-width: 720px;
-}
-
-@media (min-width: 576px) {
-    .features {
-        height: 700px;
-    }
-}
-
-
-/* .area_box:hover {
-    background-color: #222222;
-    transition: all 0.5s;
-} */
 
 .stats {
     background-color: #189a46;
