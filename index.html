@@ -41,6 +41,8 @@
     />
 
     <!-- CSS  -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css" />
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -220,6 +222,46 @@
         </div>
       </div>
     </section>
+    <section class="video">
+      <div class="container">
+        <div class="title text-center">
+          <h6>BETTER PET NUTRITION.</h6>
+          <h1>The Finest Fresh Food And All Your Pet Needs.</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum
+            dolor sit amet elit consec tetur adipisi elit. <br />
+            Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Iure
+            voluptatibus explicabo officia.
+          </p>
+        </div>
+        <div class="history-info mt-5">
+          <div class="position-relative">
+            <img
+              src="./img/banner2.jpeg"
+              class="img-fluid radius-image video-popup-image"
+              alt="video-popup"
+            />
+
+            <a
+              href="#small-dialog1"
+              class="play-icon popup-with-zoom-anim position-absolute text-center"
+              ><span class="fa fa-play" aria-hidden="true"></span>
+            </a>
+
+            <div
+              id="small-dialog1"
+              class="w3ls_small_dialog wthree_pop mfp-hide"
+            >
+              <div class="agileits_modal_body">
+                <iframe src="https://player.vimeo.com/video/101587706"></iframe>
+              </div>
+            </div>
+
+            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -243,6 +285,23 @@
         var element = document.body;
         element.classList.toggle("dark-mode");
       }
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./libs/js/jquery.magnific-popup.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".popup-with-zoom-anim").magnificPopup({
+          type: "inline",
+          fixedContentPos: false,
+          fixedBgPos: true,
+          overflowY: "auto",
+          closeBtnInside: true,
+          preloader: false,
+          midClick: true,
+          removalDelay: 300,
+          mainClass: "my-mfp-zoom-in",
+        });
+      });
     </script>
   </body>
 </html>
