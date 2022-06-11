@@ -922,6 +922,65 @@ div#small-dialog iframe {
 }
 
 
+/* CONTACT CSS */
+
+.contact .subscribe {
+    max-width: 650px;
+}
+
+.contact .contact_title h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.contact .contact_title p {
+    font-size: 1.2em;
+    line-height: 28px;
+    color: #696969;
+}
+
+.contact input {
+    height: 60px;
+    border-radius: 10px;
+}
+
+.contact button {
+    margin-left: 15px;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #116E32;
+    border-color: #116E32;
+}
+
+.contact input[type=email] {
+    outline: none;
+    padding: 0 20px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.contact input[type=email]:focus {
+    border: 1px solid #189a46;
+    transition: all 0.5s;
+    outline: none;
+    box-shadow: none;
+}
+
+@media (max-width: 667px) {
+    .contact button {
+        flex-basis: 100%;
+        display: block;
+        width: 100%;
+        margin-top: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
 /* tesst */
 
 
