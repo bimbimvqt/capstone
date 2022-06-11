@@ -375,14 +375,26 @@ nav ul li {
   padding: 3.5em 2.5em;
 }
 
+.contact p,
+h3 {
+  color: #000c04;
+}
+.dark-mode p {
+  color: #ffffff;
+}
+.dark-mode .contact_title h3 {
+  color: #ffffff;
+}
+
 .btn-primary {
   background-color: #189a46;
-  padding: 12px 35px;
+  padding: 1px 30px;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
   border-radius: 10px;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 .buy-button .btn-style:hover {
@@ -850,6 +862,55 @@ a.read:hover {
 }
 .dark-mode .w3l-grids-3 h3 {
   color: #ffffff;
+}
+
+/* Services */
+
+.rounded {
+  border-radius: 0.75rem !important;
+}
+
+.services .services_text {
+  align-self: center;
+}
+
+.services .services_text h6 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 2em;
+  letter-spacing: 1px;
+  color: red;
+}
+
+.services .services_text h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+.services .services_text p {
+  line-height: 24px;
+  font-size: 16px;
+  color: #696969;
+  margin: 15px 0 35px;
+}
+
+.services .services_text ul {
+  list-style: none;
+}
+
+.services .services_text li {
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.fa-check {
+  color: #189a46;
+  padding: 8px;
+  font-size: 10px;
+  margin-right: 12px;
 }
 
 /* Video  */
