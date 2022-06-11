@@ -21,6 +21,7 @@ header {
 .dark-mode header {
   background-color: #151515;
 }
+
 .fixed-top {
   position: fixed;
   top: 40px;
@@ -169,7 +170,8 @@ nav ul li {
 }
 
 .carousel-inner .container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  width: 100%;
   margin: 0 auto;
   transform: translateY(75%);
 }
@@ -661,6 +663,11 @@ body {
   color: #ffffff;
 }
 
+h1,
+h3 {
+  color: #000c04;
+}
+
 .dark-mode .gg-sun {
   color: #ffffff;
 }
@@ -832,10 +839,59 @@ a.read:hover {
   color: #afafaf;
 }
 
+.dark-mode .title h1 {
+  color: #ffffff;
+}
+.dark-mode .feedbacks .hny-title {
+  color: #ffffff;
+}
+.dark-mode .plan h3 {
+  color: #ffffff;
+}
+.dark-mode .w3l-grids-3 h3 {
+  color: #ffffff;
+}
+
 /* Video  */
 
 .video {
   margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.video span .video-play-icon {
+  background: #fff;
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  /* -webkit-animation: ripple 1s linear infinite; */
+  animation: ripple 1s linear infinite;
+}
+
+@-webkit-keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(15, 162, 67, 0.25),
+      0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25);
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px rgba(15, 162, 67, 0.25),
+      0 0 0 20px rgba(15, 162, 67, 0.25), 0 0 0 40px rgba(50, 100, 245, 0);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgb(15 162 66 / 16%), 0 0 0 10px rgb(15 162 67 / 25%),
+      0 0 0 20px rgb(15 162 67 / 25%);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgb(15 162 67 / 25%), 0 0 0 20px rgb(15 162 67 / 25%),
+      0 0 0 40px rgb(50 100 245 / 0%);
+  }
 }
 
 .video .title h6 {
@@ -1363,10 +1419,10 @@ button::-moz-focus-inner {
   background-color: rgb(147 107 245 / 0.05);
 }
 
-body {
+/* body {
   margin: 100px 0;
   padding: 30px;
-}
+} */
 
 .contain {
   margin: 0 auto;
@@ -1467,9 +1523,9 @@ blockquote::after {
 }
 
 /* footer */
-body {
+/* body {
   margin-top: 20px;
-}
+} */
 .footer_area {
   position: relative;
   z-index: 1;
