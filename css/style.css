@@ -51,6 +51,32 @@
                     border-radius: 0.25rem;
                 }
                 
+                .navbar-toggler .fa-bars {
+                    background-color: #189a46;
+                    line-height: 33px;
+                    border-radius: 5px;
+                    color: #fff;
+                    height: 33px;
+                    width: 33px;
+                }
+                
+                .fixed-top .container {
+                    background-color: #fff;
+                    text-align: center;
+                }
+                
+                .fixed-top {
+                    background-color: #fff;
+                }
+                
+                button.navbar-toggler.collapsed .icon-close {
+                    display: none;
+                }
+                
+                .navbar-nav .nav-item {
+                    padding: 0px 10px;
+                }
+                
                 button .navbar-toggler.collapsed .icon-expand {
                     display: none;
                 }
@@ -934,6 +960,11 @@ input:checked + .mode-container i.gg-sun {
                 
                 body {
                     background-color: white;
+                    color: black;
+                }
+                
+                .dark-mode .fixed-top .container {
+                    background-color: black;
                     color: black;
                 }
                 
